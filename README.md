@@ -1,6 +1,6 @@
-# Production Go Concurrency Suite: Solutions to Anthropic Concurrency Problems
+# Production Go Concurrency Suite: A Set of Interesting Concurrency Problems
 
-A production-grade, race-free Go implementation of the five core concurrency challenges frequently evaluated in top-tier systems interviews (specifically Anthropic's distributed and concurrent systems tracks).
+A production-grade, race-free Go implementation of a set of interesting concurrency problems commonly encountered in high-throughput distributed systems and systems engineering.
 
 Every module addresses the exact concurrency traps, failure modes, race conditions, and architectural criteria outlined in the problem specifications, and is verified with Go's race detector (`go test -race ./...`).
 
@@ -45,7 +45,7 @@ Every module addresses the exact concurrency traps, failure modes, race conditio
 
 ## Go Concurrency vs. Python Concurrency Deep-Dive
 
-Interviewers at Anthropic frequently contrast Go's concurrency runtime with Python's internals:
+When designing concurrent systems, it is often insightful to contrast Go's concurrency runtime with Python's internals:
 
 | Aspect | Go Runtime | Python (CPython) |
 |---|---|---|
